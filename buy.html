@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+integrity="sha384-
+5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+
+crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<style>
+    html, body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    }
+    h1 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #fc0000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    p {
+    margin: 0 0 5px;
+    }
+    .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #13000c;
+    }
+    form {
+    padding: 25px;
+    margin: 25px;
+    border-radius: 70px 0px 70px;
+    box-shadow: 0 2px 5px #bbd213; 
+    background:rgb(248, 248, 108); 
+    }
+    .fas {
+    margin: 2px 123px 11px 11px;
+    font-size: 72px;
+    color: yellow;
+    }
+    .fa-dog , .fa-paw {
+    transform: rotate(-20deg);
+    }
+    .fa-fish , .fa-feather{
+    transform: rotate(10deg);
+    }
+    input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid yellow;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    }
+    input::placeholder {
+    color: rgb(59, 6, 50);
+    }
+    button {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    background: #be0b1d; 
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 190px;
+    color: rgb(255, 255, 255);
+    }
+    button:hover {
+    background: #34a023;
+    } 
+    @media (min-width: 568px) {
+    .main-block {
+    flex-direction: row;
+    }
+    .left-part, form {
+    width: 50%;
+    }
+    .fa-dog {
+    margin-top: 0;
+    margin-left: 20%;
+    }
+    .fa-paw{
+        padding-left: 34px;
+    }
+    .fa-dove{
+        padding-left: 74px;
+    }
+    
+    .fa-cat {
+    /* margin-top: 10%; */
+    margin-left: 65%;
+    }
+    .fa-feather {
+    margin-top: 2%;
+    margin-left: 28%;
+    }
+    }
+    </style>
+</head>
+<body >
+    <div class="container blue circleBehind" style="width:100%;">
+        <a href="#">HOME</a>
+        <a href="http://localhost/petzee/searchbreed.html">SEARCH PETS</a>
+        <a href="http://localhost/petzee/buy.html">BUY PETS</a>
+        <a href="http://localhost/petzee/sell.html">SELL PETS</a>
+        <a href="http://localhost/petzee/doctor.html">PET CARE</a>
+        <a href="http://localhost/petzee/index.php">LOGIN</a>
+        </div>
+<div class="main-block">
+<div class="left-part">
+<!-- <i class="fas fa-fish"></i>
+<i class="fas fa-dog"></i>
+<i class="fas fa-dove"></i> -->
+<!-- <!-- <i class="fas fa-cat"></i> -->
+<i class="fas fa-dove"></i> -->
+<!-- <i class="fas fa-paw"></i> -->
+<i class="fas fa-paw"></i>
+<!-- <i class="fas fa-feather"></i> -->
+<i class="fas fa-dog"></i>
+<i class="fas fa-feather"></i>
+<i class="fas fa-fish"></i>
+</div>
+<form action="buy.php" method="post">
+<h1>BUY PETS</h1>
+<div class="info">
+<input class="fname" type="text" name="nam" placeholder=" Name">
+<input type="text" name="petname" placeholder="petname">
+<input type="text" name="loc" placeholder="location">
+<input type="number" name="sellnum" placeholder="seller gpay number">
+<input type="number" name="amt" placeholder="amount">
+</div>
+<button type="submit">Buy </button>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="./navbar.css">
+<title>Sign in</title>
+<style>
+   
+         .form-input {
+ width:20%;
+ margin-bottom: 10px;
+ font-size: 0.85em;
+ font-weight: 40;
+ border-radius: 0px !important;
+ padding: 10px 20px;}
+ input, textarea, button, button:focus {
+ outline: none;
+ box-shadow:none !important;
+ color:rgb(248, 248, 108);
+ background-color: black;
+ }
+ input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid yellow;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    }
+ </style>
+
+</head>
+<body>
+<div class="container blue circleBehind" style="width:100%;">
+
+<a href="#">HOME</a>
+<a href="http://localhost/petzee/searchbreed.html">SEARCH PETS</a>
+<a href="http://localhost/petzee/buy.html">BUY PETS</a>
+<a href="http://localhost/petzee/sell.html">SELL PETS</a>
+<a href="http://localhost/petzee/doctor.html">PET CARE</a>
+<a href="http://localhost/petzee/index.php">LOGIN</a>
+</div>
+<!-- <form action="process-signup.php" method="post" id="main" novalidate>
+<h2>SignUp</h2>
+<div class="input-parent">
+<label for="username"> Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="input-parent">
+<label for="username"> Email</label>
+<input type="email" id="username" name="email" required>
+</div>
+<div class="input-parent">
+<label for="password">Password</label>
+<input type="password" id="password" name="password" required>
+</div>
+<div class="input-parent">
+<label for="password">ConfirmPassword</label>
+<input type="password" id="password_confirmation" name="password_confirmation"
+required>
+</div>
+<button type="submit">Signin</button>
+</form> -->
+<center>
+<form action="process-signup.php" method="post" id="signup" novalidate>
+        
+        <div class="form-group">
+            <input type="text" placeholder="name" name="name"  id="name"required class="form-control form-input">
+        </div>
+   
+        <div class="form-group">
+            <input type="email" placeholder="email"id="email" name="email" required class="form-control form-input">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="password"id="password" name="password" required class="form-control form-input">
+        </div>
+       
+        <div class="form-group">
+            <input type="password" placeholder="password_confirmation"  id="password_confirmation" name="password_confirmation" required class="form-control form-input">
+        </div>
+        <button>Sign in</button>
+    </form>
+</center>
+</body>
+</html>

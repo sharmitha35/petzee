@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="navbar.css">
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.cs
+s" rel="stylesheet" integrity="sha384-
+EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous">
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.m
+in.js" integrity="sha384-
+MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+<link rel="stylesheet"
+
+href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/6.2.1/css/all.min.css" integrity="sha512-
+
+MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQr
+J7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+
+
+    body
+    {
+        background-color:rgb(251, 251, 247) !important;
+        color: black !important;
+        /* background-image: url("https://ih1.redbubble.net/image.1118123010.0990/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"); */
+    }
+    
+    .navbar
+    {
+        background-color: black !important;
+    }
+    .navbar-brand,.nav-link
+    {
+        
+        color: lemonchiffon !important;
+    
+    }
+    
+    
+    nav
+    {
+        height: 80px;
+       
+       
+    }
+    
+    .about-us
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:x-large;
+        font-weight: 900;
+        background-image: url("https://www.shutterstock.com/image-vector/footprints-432878971") !important;
+    
+    
+    }
+    
+    .about-img
+    {
+        width:2000px ;
+        height:500px ;
+    }
+    
+    .about-img img 
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .available,.doctor
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin:  60px;
+    }
+    
+    .pet-img
+    {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .pet-img img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card-group
+    {
+        justify-content: space-evenly !important;
+        gap: 50px;
+        width: 100%;
+        margin: 40px;
+        padding:auto 90px !important;
+        flex-wrap: wrap;
+        color: lemonchiffon;
+       
+    }
+    
+    .card
+    {
+        background-color: black !important;
+        border: none !important;
+        /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+        /* box-shadow: 10px 10px 8px #888888; */
+        /* box-shadow: 20px 20px 50px 10px pink inset; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        justify-content: center;
+        align-items: center;
+        min-width: 350px;
+        max-width: 400px;
+        padding: 20px;
+        background-color: black;
+      
+    }
+    
+    .card-body
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    
+    .card-doctor
+    {
+        width: 60% !important;
+        max-width: 60% !important;
+    }
+    
+    footer
+    {
+        display: flex;
+        background-color: black;
+        padding: 40px;
+        color: lemonchiffon;
+    
+    }
+    
+    .contact-us
+    {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    
+    }
+    
+    .contact-us i
+    {
+        font-size: 30px;
+        margin: 15px;
+    }
+    
+    .btn
+    {
+        padding: 15px 40px;
+        background-color: lemonchiffon !important;
+        color: black !important;
+        border-color: lemonchiffon !important;
+        font-size: 25px !important;
+       
+    
+    }
+    
+    .d-flex
+    {
+        width: 7%;
+        justify-content: flex-start;
+    }
+    
+    .about
+    {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+<!-- <nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">PETZEE</a>
+
+<button class="navbar-toggler" type="button" data-bs-
+toggle="collapse" data-bs-target="#navbarSupportedContent" aria-
+controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+
+navigation">
+
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page"
+
+href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#">About us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="#" >Contact</a>
+</li>
+</ul>
+<div class="d-flex navbutton ">
+<button class="btn btn-warning">Login</button>
+</div>
+</div>
+</div>
+</nav> -->
+<div class="container blue circleBehind" style="width:100%;"
+id="div">
+
+<a href="http://localhost/petzee/home.html">HOME</a>
+<!-- <a href="http://localhost/petzee/searchbreed.html">SEARCH
+
+PETS</a>
+
+<a href="http://localhost/petzee/buy.html">BUY PETS</a>
+<a href="http://localhost/petzee/sell.html">SELL PETS</a>
+<a href="http://localhost/petzee/doctor.html">PET CARE</a> -->
+<a href="http://localhost/petzee/index.php">LOGIN</a>
+</div>
+<div class="about-us">
+<div class="about-img">
+
+<img src="https://cff2.earth.com/uploads/2019/07/08191128/The-
+personalities-of-animal-owners-are-reflected-in-their-pets.jpg" alt="">
+
+</div>
+<div class="about-content">
+<p>PetZee is a one-stop shop for all pet owners, offering a
+comprehensive range of pet supplies for dogs, cats, rabbits, rodents,
+fishes, etc. Starting from nutritious foods to delicious treats and going
+far up to healthcare, grooming and training products, we at PetsWorld have
+everything to ensure the excellent well-being of your pets.
+
+All you need to do is select your desired pet products at
+PetZee and leave the rest to us to make them reach your doorsteps in the
+shortest possible time.</p>
+</div>
+</div>
+<div class="available">
+<h2>Available pets</h2>
+<div class="card-group">
+<div class="card">
+<div class="pet-img">
+<img
+
+src="https://assets.vogue.in/photos/62502b8d90038a40f11ff27c/2:3/w_2560%2Cc_
+limit/Dog%25202.png" alt="">
+</div>
+<div class="card-body">
+<h3>Shi-tzu</h3>
+
+<button class="btn btn-
+success"><a href="http://localhost/petzee/buy.html">BUY </a></button>
+
+</div>
+</div>
+<div class="card">
+<div class="pet-img">
+
+<img src="https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcSwAaU_BmZLYmehumkmGO3MNgPiyE0kmfDmmQ&usq
+
+p=CAU" alt="">
+</div>
+<div class="card-body">
+<h3>Bengal Cat</h3>
+
+<button class="btn btn-
+success"><a href="http://localhost/petzee/buy.html">BUY </a></button>
+
+</div>
+</div>
+<div class="card">
+<div class="pet-img">
+
+<img src="https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcQbFyosB6ewqxVx-
+b69FAuWGapO7cW1KzB0QA&usqp=CAU" alt="">
+
+</div>
+<div class="card-body">
+<h3>Dutch Rabbit</h3>
+
+<button class="btn btn-
+success"><a href="http://localhost/petzee/buy.html">BUY </a></button>
+
+</div>
+</div>
+<div class="card">
+<div class="pet-img">
+
+<img src="https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcTNYZhobjmy-dsz-
+KGpZe3nh_aInSoG6Dsp5g&usqp=CAU" alt="">
+
+</div>
+<div class="card-body">
+<h3>Labrador</h3>
+
+<button class="btn btn-
+success"><a href="http://localhost/petzee/buy.html">BUY </a></button>
+
+</div>
+</div>
+</div>
+</div>
+<div class="available">
+<h2>Accessories</h2>
+<div class="card-group">
+<div class="card">
+<div class="pet-img">
+<img
+
+src="https://i.ebayimg.com/images/g/TQgAAOSw17hcr~Rq/s-l500.jpg" alt="">
+
+</div>
+<div class="card-body">
+<h3>Collar</h3>
+<button class="btn btn-success">Buy</button>
+</div>
+</div>
+<div class="card">
+<div class="pet-img">
+
+<img src="https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcSar22ZvofRRvQfdnug0nhZAVXt2uYdK3O64LGjVr
+
+nHfFVKeHTrgv4fEwIi_BA12--Lr4w&usqp=CAU" alt="">
+
+</div>
+<div class="card-body">
+<h3>Food</h3>
+<button class="btn btn-success">Buy</button>
+</div>
+</div>
+<div class="card">
+<div class="pet-img">
+<img
+
+src="https://i.etsystatic.com/19794119/r/il/9b056b/3536278141/il_fullxfull.3
+536278141_matz.jpg" alt="">
+</div>
+<div class="card-body">
+
+<h3>Dresses</h3>
+<button class="btn btn-success">Buy</button>
+</div>
+</div>
+<div class="card">
+<div class="pet-img">
+<img
+
+src="https://rukminim1.flixcart.com/image/612/612/kyg5zm80/pet-toy/d/d/u/6-
+
+pack-of-6-durable-chewing-cotton-knotted-rope-toys-for-medium-original-
+imagazhuey7eaym9.jpeg?q=70" alt="">
+
+</div>
+<div class="card-body">
+<h3>Toys</h3>
+<button class="btn btn-success">Buy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="doctor">
+<h2>Consult a doctor</h2>
+<div class="card-group">
+<div class="card card-doctor">
+<div class="pet-img">
+
+<img src="https://s3e8p5g8.rocketcdn.me/wp-
+content/uploads/2019/03/might_you_work_veterinarian.jpg" alt="">
+
+</div>
+<div class="card-body">
+<h3>Need consultation from a doctor...!</h3>
+<button class="btn btn-success"><a
+
+href="http://localhost/petzee/doctor.html">Get Appointment</a></button>
+
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="about">
+<p> team is available at (Mon-Sat, 10 AM to 7 PM): <i
+
+class="fa-solid fa-phone"></i> 87440-12035/53 (sales) <i class="fa-solid
+
+fa-phone"></i> 87440-12036 (support) <i class="fa-solid fa-
+envelope"></i> support@petzee.in</p><br>
+
+<p>© 2022 PetZee India | All Rights Reserved</p>
+</div>
+<div class="contact-us">
+<i class="fa-brands fa-square-facebook"></i>
+<i class="fa-brands fa-square-instagram"></i>
+<i class="fa-brands fa-square-twitter"></i>
+<i class="fa-brands fa-linkedin"></i>
+</div>
+</footer>
+</body>
+</html>
